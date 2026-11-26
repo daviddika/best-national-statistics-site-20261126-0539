@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Portal Statistik Nasional Indonesia</title>
+<meta name="description" content="NusaStat — portal statistik nasional Indonesia: penduduk, ekonomi, ketenagakerjaan, dan perbandingan 38 provinsi, dengan angka resmi 2015–2024.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E4A3F'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='700' fill='%23FFFFFF' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span>NusaStat<small>Portal Statistik Nasional</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#/" data-nav="dashboard">Beranda</a>
+      <a href="#/population" data-nav="population">Penduduk</a>
+      <a href="#/economy" data-nav="economy">Ekonomi</a>
+      <a href="#/employment" data-nav="employment">Ketenagakerjaan</a>
+      <a href="#/provinces" data-nav="provinces">Provinsi</a>
+      <a href="#/tables" data-nav="tables">Tabel Data</a>
+      <a href="#/methodology" data-nav="methodology">Metodologi</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-wrap">
+        <label class="visually-hidden" for="site-search">Cari indikator</label>
+        <input id="site-search" class="input search-input" type="search" placeholder="Cari indikator… (mis. inflasi)" autocomplete="off">
+      </div>
+      <button type="button" class="theme-toggle" data-action="toggle-theme" aria-label="Ganti tema gelap / terang" title="Ganti tema">◐</button>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="container" aria-live="polite"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>NusaStat</strong> — Portal Statistik Nasional Indonesia. Angka disusun dari rilis publik Badan Pusat Statistik (BPS), Bank Indonesia, dan World Bank, vintage 2024. Lihat halaman <a href="#/methodology">Metodologi</a> untuk definisi dan catatan.</p>
+    <p>Situs ini karya orisinal dan tidak berafiliasi dengan BPS atau instansi pemerintah mana pun. Semua angka dapat diverifikasi pada sumber yang tercantum di setiap bagian.</p>
+  </div>
+</footer>
+
+<noscript><p class="container">Situs ini memerlukan JavaScript untuk menampilkan grafik dan tabel interaktif.</p></noscript>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
